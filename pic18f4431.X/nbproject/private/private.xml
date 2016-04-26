@@ -3,10 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/H:/Embedded_Programing/Microchip/pic18f4431.X/isr.c</file>
-            <file>file:/H:/Embedded_Programing/Microchip/pic18f4431.X/func.h</file>
-            <file>file:/H:/Embedded_Programing/Microchip/pic18f4431.X/main.c</file>
-            <file>file:/H:/Embedded_Programing/Microchip/pic18f4431.X/func.c</file>
+            <file>file:/D:/Microchip%20library/pic18f4431.X/main.c</file>
+            <file>file:/D:/Microchip%20library/pic18f4431.X/qei.h</file>
+            <file>file:/D:/Microchip%20library/pic18f4431.X/qei.c</file>
         </group>
     </open-files>
 </project-private>

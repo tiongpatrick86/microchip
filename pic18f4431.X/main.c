@@ -1,21 +1,22 @@
 
 
     #include <xc.h>
-//    #include <adc.h>
     #include <usart.h>
     #include <stddef.h>
     #include <stdbool.h>
 
 
-//    #pragma config OSC = HS		//if 20MHz external crystal is used, need to select HS
+
 	#pragma config OSC = HSPLL	// Maximum Fosc is 40MHz, so HSPLL is select, please change external crystal to 10MHz
-	//#pragma config OSC = INTIO67	// Using internal 8MHz Oscillator, RA6 and RA7 as normal IO pin
 	#pragma config FCMEN = OFF 	// Fail-Safe Clock Monitor Enable bit
 	#pragma config IESO = OFF		// Internal/External Oscillator Switchover Enable bit
 	#pragma config PWRTEN = ON		// Power Up Timer Enable bit 
 	#pragma config BOREN = OFF 	// Brown-out Reset Enable bits
     #pragma config BORV = 45
 	#pragma config WDTEN = OFF 		// Watch-Dog Timer Enable bit
+
+//  #pragma config OSC = INTIO67	// Using internal 8MHz Oscillator, RA6 and RA7 as normal IO pin
+//  #pragma config OSC = HS		//if 20MHz external crystal is used, need to select HS
 //	#pragma config CCP2MX = PORTC	//CCP2 at RC1
 //	#pragma config PBADEN = ON	// PORTB analog pin as analog input after Reset	
 //	#pragma config LPT1OSC = OFF	// Timer 1 configured for high power operation 
@@ -103,7 +104,7 @@ void main(void) {
     
     
     Timer5_Int();
-    Timer5_Start(500000);
+    Timer5_Start(5000);
     
     
     while (true)

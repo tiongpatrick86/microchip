@@ -1,0 +1,437 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\patrick\AppData\Local\Temp\shfk.obj
+idloc IDLOC 0 200000 200000 8 1
+reset_vec CODE 0 0 0 4 1
+end_init CODE 0 D8 D8 4 1
+config CONFIG 0 300000 300000 E 1
+$dist/default/production\COM_I2C.X.production.obj
+intcodelo CODE 0 18 18 C0 1
+cinit CODE 0 14C 14C 32 1
+intcode_body CODE 0 DC DC 70 1
+text0 CODE 0 208 208 E 1
+text1 CODE 0 17E 17E 32 1
+text2 CODE 0 1B0 1B0 2C 1
+text4 CODE 0 1DC 1DC 2C 1
+text5 CODE 0 216 216 C 1
+idataCOMRAM CODE 0 222 222 A 1
+cstackCOMRAM COMRAM 1 1 1 24 1
+intcode CODE 0 8 8 10 1
+dataCOMRAM COMRAM 1 31 31 A 1
+bssCOMRAM COMRAM 1 25 25 C 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-2FF 1
+SFR F60-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+CONST 4-7 1
+CONST 22C-3FFF 1
+STACK 60-2FF 1
+SMALLCONST 300-3FFF 1
+CODE 4-7 1
+CODE 22C-3FFF 1
+BIGRAM 3B-2FF 1
+COMRAM 3B-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 300-3FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\COM_I2C.X.production.obj
+8 intcode CODE >41:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\isr.c
+8 intcode CODE >42:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\ssp.c
+18 intcodelo CODE >142:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+18 intcodelo CODE >25:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\isr.c
+5C intcodelo CODE >27:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\isr.c
+60 intcodelo CODE >30:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\isr.c
+62 intcodelo CODE >31:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\isr.c
+64 intcodelo CODE >32:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\isr.c
+72 intcodelo CODE >33:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\isr.c
+74 intcodelo CODE >34:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\isr.c
+7E intcodelo CODE >35:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\isr.c
+8C intcodelo CODE >36:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\isr.c
+8E intcodelo CODE >37:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\isr.c
+92 intcodelo CODE >39:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\isr.c
+DC intcode_body CODE >41:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\isr.c
+108 intcode_body CODE >43:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\isr.c
+10C intcode_body CODE >45:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\isr.c
+10E intcode_body CODE >46:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\isr.c
+112 intcode_body CODE >48:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\isr.c
+14C cinit CODE >1362:C:\Users\patrick\AppData\Local\Temp\shfk.
+14C cinit CODE >1364:C:\Users\patrick\AppData\Local\Temp\shfk.
+14C cinit CODE >1367:C:\Users\patrick\AppData\Local\Temp\shfk.
+14C cinit CODE >1391:C:\Users\patrick\AppData\Local\Temp\shfk.
+150 cinit CODE >1392:C:\Users\patrick\AppData\Local\Temp\shfk.
+152 cinit CODE >1393:C:\Users\patrick\AppData\Local\Temp\shfk.
+152 cinit CODE >1394:C:\Users\patrick\AppData\Local\Temp\shfk.
+154 cinit CODE >1395:C:\Users\patrick\AppData\Local\Temp\shfk.
+156 cinit CODE >1396:C:\Users\patrick\AppData\Local\Temp\shfk.
+158 cinit CODE >1401:C:\Users\patrick\AppData\Local\Temp\shfk.
+15A cinit CODE >1402:C:\Users\patrick\AppData\Local\Temp\shfk.
+15C cinit CODE >1403:C:\Users\patrick\AppData\Local\Temp\shfk.
+15E cinit CODE >1404:C:\Users\patrick\AppData\Local\Temp\shfk.
+160 cinit CODE >1405:C:\Users\patrick\AppData\Local\Temp\shfk.
+162 cinit CODE >1406:C:\Users\patrick\AppData\Local\Temp\shfk.
+164 cinit CODE >1407:C:\Users\patrick\AppData\Local\Temp\shfk.
+168 cinit CODE >1408:C:\Users\patrick\AppData\Local\Temp\shfk.
+16C cinit CODE >1409:C:\Users\patrick\AppData\Local\Temp\shfk.
+16C cinit CODE >1410:C:\Users\patrick\AppData\Local\Temp\shfk.
+16E cinit CODE >1411:C:\Users\patrick\AppData\Local\Temp\shfk.
+172 cinit CODE >1412:C:\Users\patrick\AppData\Local\Temp\shfk.
+174 cinit CODE >1413:C:\Users\patrick\AppData\Local\Temp\shfk.
+176 cinit CODE >1414:C:\Users\patrick\AppData\Local\Temp\shfk.
+178 cinit CODE >1420:C:\Users\patrick\AppData\Local\Temp\shfk.
+178 cinit CODE >1421:C:\Users\patrick\AppData\Local\Temp\shfk.
+17A cinit CODE >1422:C:\Users\patrick\AppData\Local\Temp\shfk.
+17E text1 CODE >87:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+17E text1 CODE >100:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+182 text1 CODE >101:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+186 text1 CODE >102:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+18A text1 CODE >103:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+18E text1 CODE >104:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+192 text1 CODE >106:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+196 text1 CODE >107:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+19A text1 CODE >108:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+19E text1 CODE >109:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1A2 text1 CODE >110:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1A6 text1 CODE >113:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1AA text1 CODE >114:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1AE text1 CODE >116:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1B0 text2 CODE >118:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1B0 text2 CODE >122:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1B4 text2 CODE >123:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1B8 text2 CODE >125:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1BC text2 CODE >128:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1C2 text2 CODE >129:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1C4 text2 CODE >130:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1C6 text2 CODE >131:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1CE text2 CODE >134:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1D0 text2 CODE >136:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1D2 text2 CODE >137:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1D4 text2 CODE >138:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1D6 text2 CODE >140:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1D8 text2 CODE >141:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1DA text2 CODE >142:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+1DC text4 CODE >57:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\ssp.c
+1DC text4 CODE >59:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\ssp.c
+1E6 text4 CODE >61:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\ssp.c
+1E8 text4 CODE >62:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\ssp.c
+1FE text4 CODE >63:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\ssp.c
+204 text4 CODE >64:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\ssp.c
+206 text4 CODE >65:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\ssp.c
+208 text0 CODE >145:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+208 text0 CODE >146:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+20C text0 CODE >147:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+210 text0 CODE >149:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+212 text0 CODE >154:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\COM.c
+216 text5 CODE >37:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\ssp.c
+216 text5 CODE >39:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\ssp.c
+220 text5 CODE >42:H:\Microchip embedded programing\PIC18F4431\COM_I2C.X\ssp.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\COM_I2C.X.production.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Hspace_1 3B 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Hspace_2 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__end_of_ISRLow D8 0 CODE 0 intcodelo dist/default/production\COM_I2C.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\COM_I2C.X.production.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\patrick\AppData\Local\Temp\shfk.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\COM_I2C.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__CFG_LPOL$LOW 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+I2C_Slave_config@I2c_mode 23 0 COMRAM 1 cstackCOMRAM dist/default/production\COM_I2C.X.production.obj
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\COM_I2C.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\patrick\AppData\Local\Temp\shfk.obj
+_main 208 0 CODE 0 text0 dist/default/production\COM_I2C.X.production.obj
+start D8 0 CODE 0 init C:\Users\patrick\AppData\Local\Temp\shfk.obj
+__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__CFG_WDTEN$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\COM_I2C.X.production.obj
+__CFG_DEBUG$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Hpowerup D8 0 CODE 0 powerup dist/default/production\COM_I2C.X.production.obj
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\COM_I2C.X.production.obj
+__accesstop 60 0 ABS 0 - C:\Users\patrick\AppData\Local\Temp\shfk.obj
+intlevel0 0 0 CODE 0 text C:\Users\patrick\AppData\Local\Temp\shfk.obj
+intlevel1 0 0 CODE 0 text C:\Users\patrick\AppData\Local\Temp\shfk.obj
+intlevel2 0 0 CODE 0 text C:\Users\patrick\AppData\Local\Temp\shfk.obj
+intlevel3 0 0 CODE 0 text C:\Users\patrick\AppData\Local\Temp\shfk.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\COM_I2C.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\COM_I2C.X.production.obj
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\COM_I2C.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\COM_I2C.X.production.obj
+__size_of_SYSTEM_INT 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__pidataCOMRAM 222 0 CODE 0 idataCOMRAM dist/default/production\COM_I2C.X.production.obj
+_ANSEL0 FB8 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\patrick\AppData\Local\Temp\shfk.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\patrick\AppData\Local\Temp\shfk.obj
+_SSPCONbits FC6 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\COM_I2C.X.production.obj
+_Buffer 30 0 COMRAM 1 bssCOMRAM dist/default/production\COM_I2C.X.production.obj
+_I2C_data 25 0 COMRAM 1 bssCOMRAM dist/default/production\COM_I2C.X.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\COM_I2C.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\COM_I2C.X.production.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\COM_I2C.X.production.obj
+__Hintcodelo D8 0 CODE 0 intcodelo dist/default/production\COM_I2C.X.production.obj
+_I2c_read_char2 216 0 CODE 0 text5 dist/default/production\COM_I2C.X.production.obj
+_I2c_send_array 1DC 0 CODE 0 text4 dist/default/production\COM_I2C.X.production.obj
+_ISRLow 18 0 CODE 0 intcodelo dist/default/production\COM_I2C.X.production.obj
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\COM_I2C.X.production.obj
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/production\COM_I2C.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+start_initialization 14C 0 CODE 0 cinit dist/default/production\COM_I2C.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\COM_I2C.X.production.obj
+__size_of_ISRHigh 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+___rparam_used 1 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+I2c_send_array@buffer F 0 COMRAM 1 cstackCOMRAM dist/default/production\COM_I2C.X.production.obj
+__CFG_HPOL$LOW 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+_IPR1bits F9F 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+_SSPADD FC8 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+_SSPBUF FC9 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+_I2C_Slave_config 1B0 0 CODE 0 text2 dist/default/production\COM_I2C.X.production.obj
+__end_of_I2c_read_char2 222 0 CODE 0 text5 dist/default/production\COM_I2C.X.production.obj
+__size_of_ISRLow 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__end_of_I2c_send_array 208 0 CODE 0 text4 dist/default/production\COM_I2C.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\COM_I2C.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\COM_I2C.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\COM_I2C.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production\COM_I2C.X.production.obj
+__Hconst 0 0 CODE 0 const dist/default/production\COM_I2C.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production\COM_I2C.X.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production\COM_I2C.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\COM_I2C.X.production.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\COM_I2C.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\COM_I2C.X.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production\COM_I2C.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production\COM_I2C.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production\COM_I2C.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production\COM_I2C.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production\COM_I2C.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production\COM_I2C.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\COM_I2C.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production\COM_I2C.X.production.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\patrick\AppData\Local\Temp\shfk.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production\COM_I2C.X.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production\COM_I2C.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\COM_I2C.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\COM_I2C.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\COM_I2C.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production\COM_I2C.X.production.obj
+__Lconst 0 0 CODE 0 const dist/default/production\COM_I2C.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production\COM_I2C.X.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production\COM_I2C.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\COM_I2C.X.production.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\COM_I2C.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\COM_I2C.X.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production\COM_I2C.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production\COM_I2C.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production\COM_I2C.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production\COM_I2C.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production\COM_I2C.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production\COM_I2C.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\COM_I2C.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\COM_I2C.X.production.obj
+_INTCONbits FF2 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production\COM_I2C.X.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production\COM_I2C.X.production.obj
+__Hinit D8 0 CODE 0 init dist/default/production\COM_I2C.X.production.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\COM_I2C.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\COM_I2C.X.production.obj
+__Htemp 0 0 COMRAM 1 temp dist/default/production\COM_I2C.X.production.obj
+__Htext 0 0 ABS 0 text dist/default/production\COM_I2C.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production\COM_I2C.X.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production\COM_I2C.X.production.obj
+__Linit D8 0 CODE 0 init dist/default/production\COM_I2C.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\COM_I2C.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\COM_I2C.X.production.obj
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\COM_I2C.X.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production\COM_I2C.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\COM_I2C.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production\COM_I2C.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production\COM_I2C.X.production.obj
+__S0 30000E 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__S1 3B 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__S2 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+_buffer 31 0 COMRAM 1 dataCOMRAM dist/default/production\COM_I2C.X.production.obj
+__end_of_ISRHigh 14C 0 CODE 0 intcode_body dist/default/production\COM_I2C.X.production.obj
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\COM_I2C.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\COM_I2C.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\COM_I2C.X.production.obj
+__end_of_I2C_Slave_config 1DC 0 CODE 0 text2 dist/default/production\COM_I2C.X.production.obj
+int_func DC 0 CODE 0 intcode_body dist/default/production\COM_I2C.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production\COM_I2C.X.production.obj
+__CFG_T1OSCMX$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+I2C_Slave_config@I2c_slave_add 24 0 COMRAM 1 cstackCOMRAM dist/default/production\COM_I2C.X.production.obj
+__size_of_I2C_Slave_config 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Hramtop 300 0 RAM 0 ramtop dist/default/production\COM_I2C.X.production.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\COM_I2C.X.production.obj
+__activetblptr 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\COM_I2C.X.production.obj
+_PIE1bits F9D 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__pintcode_body DC 0 CODE 0 intcode_body dist/default/production\COM_I2C.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\COM_I2C.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production\COM_I2C.X.production.obj
+__CFG_BORV$45 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production\COM_I2C.X.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production\COM_I2C.X.production.obj
+_LATBbits F8A 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\COM_I2C.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\COM_I2C.X.production.obj
+stackhi 2FF 0 ABS 0 - C:\Users\patrick\AppData\Local\Temp\shfk.obj
+stacklo 60 0 ABS 0 - C:\Users\patrick\AppData\Local\Temp\shfk.obj
+__Lintcode 8 0 CODE 0 intcode dist/default/production\COM_I2C.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production\COM_I2C.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production\COM_I2C.X.production.obj
+_ADCON1bits FC1 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Lspace_0 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Lspace_1 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Lspace_2 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__pbssCOMRAM 25 0 COMRAM 1 bssCOMRAM dist/default/production\COM_I2C.X.production.obj
+_PIR1bits F9E 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Lend_init D8 0 CODE 0 end_init dist/default/production\COM_I2C.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\COM_I2C.X.production.obj
+_SYSTEM_INT 17E 0 CODE 0 text1 dist/default/production\COM_I2C.X.production.obj
+end_of_initialization 178 0 CODE 0 cinit dist/default/production\COM_I2C.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\COM_I2C.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production\COM_I2C.X.production.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+_RCONbits FD0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\COM_I2C.X.production.obj
+__Lramtop 300 0 RAM 0 ramtop dist/default/production\COM_I2C.X.production.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\COM_I2C.X.production.obj
+__pcinit 14C 0 CODE 0 cinit dist/default/production\COM_I2C.X.production.obj
+__ptext0 208 0 CODE 0 text0 dist/default/production\COM_I2C.X.production.obj
+__ptext1 17E 0 CODE 0 text1 dist/default/production\COM_I2C.X.production.obj
+__ptext2 1B0 0 CODE 0 text2 dist/default/production\COM_I2C.X.production.obj
+__ptext4 1DC 0 CODE 0 text4 dist/default/production\COM_I2C.X.production.obj
+__ptext5 216 0 CODE 0 text5 dist/default/production\COM_I2C.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\COM_I2C.X.production.obj
+__ramtop 300 0 RAM 0 ramtop C:\Users\patrick\AppData\Local\Temp\shfk.obj
+__CFG_PWMPIN$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Lpowerup D8 0 CODE 0 powerup dist/default/production\COM_I2C.X.production.obj
+__size_of_I2c_read_char2 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\COM_I2C.X.production.obj
+__size_of_I2c_send_array 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\COM_I2C.X.production.obj
+___param_bank 10 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\COM_I2C.X.production.obj
+__end_of__initialization 178 0 CODE 0 cinit dist/default/production\COM_I2C.X.production.obj
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\COM_I2C.X.production.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__end_of_SYSTEM_INT 1B0 0 CODE 0 text1 dist/default/production\COM_I2C.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\COM_I2C.X.production.obj
+__CFG_OSC$HSPLL 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__pintcodelo 18 0 CODE 0 intcodelo dist/default/production\COM_I2C.X.production.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\COM_I2C.X.production.obj
+_ISRHigh 8 0 CODE 0 intcode dist/default/production\COM_I2C.X.production.obj
+__Hend_init DC 0 CODE 0 end_init dist/default/production\COM_I2C.X.production.obj
+__end_of_main 216 0 CODE 0 text0 dist/default/production\COM_I2C.X.production.obj
+__pintcode 8 0 CODE 0 intcode dist/default/production\COM_I2C.X.production.obj
+_PORTA F80 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+_PORTB F81 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+_PORTC F82 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+_PORTD F83 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+_PORTE F84 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+_TRISA F92 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+_TRISB F93 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+_TRISC F94 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+_TRISD F95 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+_TRISE F96 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__CFG_CP1$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production\COM_I2C.X.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production\COM_I2C.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production\COM_I2C.X.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production\COM_I2C.X.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production\COM_I2C.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production\COM_I2C.X.production.obj
+__CFG_CPB$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+_SSPSTATbits FC7 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__initialization 14C 0 CODE 0 cinit dist/default/production\COM_I2C.X.production.obj
+__CFG_PWRTEN$ON 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__pdataCOMRAM 31 0 COMRAM 1 dataCOMRAM dist/default/production\COM_I2C.X.production.obj
+__CFG_SSPMX$RD1 0 0 ABS 0 - dist/default/production\COM_I2C.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\COM_I2C.X.production.obj
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\COM_I2C.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\COM_I2C.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\COM_I2C.X.production.obj
+__Hintcode 18 0 CODE 0 intcode dist/default/production\COM_I2C.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+intcodelo 0 18 18 214 1
+idloc 0 200000 200000 8 1
+cstackCOMRAM 1 1 1 3A 1
+reset_vec 0 0 0 4 1
+intcode 0 8 8 10 1
+config 0 300000 300000 E 1

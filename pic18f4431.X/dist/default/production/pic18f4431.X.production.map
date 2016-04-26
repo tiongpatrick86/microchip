@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.34\dat\en_msgs.txt -cs \
   -h+dist/default/production\pic18f4431.X.production.sym \
   --cmf=dist/default/production\pic18f4431.X.production.cmf -z -Q18F4431 \
-  -oC:\Users\patrick\AppData\Local\Temp\s368.6 \
+  -oC:\Users\TIONGP~1\AppData\Local\Temp\s443s.6 \
   -Mdist/default/production/pic18f4431.X.production.map -E1 -ver=XC8 \
   -ASTACK=060h-02ffh -pstack=STACK -ACODE=00h-03FFFh -ACONST=00h-03FFFh \
   -ASMALLCONST=0300h-03FFhx61 -AMEDIUMCONST=0300h-03FFFh -ACOMRAM=01h-05Fh \
@@ -21,7 +21,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\patrick\AppData\Local\Temp\s368.obj \
+  C:\Users\TIONGP~1\AppData\Local\Temp\s443s.obj \
   dist/default/production\pic18f4431.X.production.obj 
 
 Object code version is 3.11
@@ -34,7 +34,7 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\patrick\AppData\Local\Temp\s368.obj
+C:\Users\TIONGP~1\AppData\Local\Temp\s443s.obj
                 end_init                             A2       A2        4        C       0
                 reset_vec                             0        0        4        0       0
                 idloc                            200000   200000        8   200000       0
@@ -161,6 +161,8 @@ _INTCONbits               (abs)        000FF2
 _IPR1bits                 (abs)        000F9F
 _IPR3bits                 (abs)        000FA5
 _LATBbits                 (abs)        000F8A
+_MAXCNTH                  (abs)        000F65
+_MAXCNTL                  (abs)        000F64
 _OVDCOND                  (abs)        000F6B
 _OVDCONS                  (abs)        000F6A
 _PDC0H                    (abs)        000F78
@@ -180,12 +182,16 @@ _PORTB                    (abs)        000F81
 _PORTC                    (abs)        000F82
 _PORTD                    (abs)        000F83
 _PORTE                    (abs)        000F84
+_POSCNTH                  (abs)        000F67
+_POSCNTL                  (abs)        000F66
 _PTCON0bits               (abs)        000F7F
 _PTCON1bits               (abs)        000F7E
 _PTPERH                   (abs)        000F7A
 _PTPERL                   (abs)        000F7B
 _PWMCON0bits              (abs)        000F6F
 _PWMCON1bits              (abs)        000F6E
+_QEICON                   (abs)        000FB6
+_QEICONbits               (abs)        000FB6
 _RCREG                    (abs)        000FAE
 _RCSTAbits                (abs)        000FAB
 _SPBRG                    (abs)        000FAF
@@ -433,7 +439,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 89 in file "main.c"
+		line 90 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -466,7 +472,7 @@ Total ram usage:        0 bytes
 
  *************** function _uart_initialize *****************
  Defined at:
-		line 150 in file "main.c"
+		line 151 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -496,7 +502,7 @@ Total ram usage:        1 bytes
 
  *************** function _Timer5_Start *****************
  Defined at:
-		line 188 in file "main.c"
+		line 189 in file "main.c"
  Parameters:    Size  Location     Type
   PR_value        2   31[COMRAM] unsigned short 
  Auto vars:     Size  Location     Type
@@ -526,7 +532,7 @@ Total ram usage:        2 bytes
 
  *************** function _Timer5_Int *****************
  Defined at:
-		line 176 in file "main.c"
+		line 177 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -556,7 +562,7 @@ Total ram usage:        0 bytes
 
  *************** function _SYSTEM_INT *****************
  Defined at:
-		line 122 in file "main.c"
+		line 123 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type

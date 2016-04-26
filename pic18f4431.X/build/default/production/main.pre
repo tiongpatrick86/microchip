@@ -5531,9 +5531,8 @@ extern int errno;
 typedef unsigned char bool;
 
 
-# 11 "main.c"
+# 10 "main.c"
 #pragma config OSC = HSPLL
-
 #pragma config FCMEN = OFF
 #pragma config IESO = OFF
 #pragma config PWRTEN = ON
@@ -5542,7 +5541,7 @@ typedef unsigned char bool;
 #pragma config WDTEN = OFF
 
 
-# 26
+# 27
 #pragma config T1OSCMX =OFF
 #pragma config PWMPIN =OFF
 #pragma config HPOL =LOW
@@ -5585,7 +5584,7 @@ typedef unsigned char bool;
 
 #pragma config SSPMX = RD1
 
-# 74
+# 75
 unsigned char config1=0b00100000;
 unsigned char config2=0b00000000;
 unsigned char config3=0b10110010;
@@ -5618,13 +5617,13 @@ PIE1bits.ADIE =0;
 
 
 Timer5_Int();
-Timer5_Start(500000);
+Timer5_Start(5000);
 
 
 while (1)
 {
 
-# 118
+# 119
 }
 return;
 }
@@ -5632,7 +5631,7 @@ return;
 void SYSTEM_INT (void)
 {
 
-# 135
+# 136
 PORTA = 0;
 PORTB = 0;
 PORTC = 0;
